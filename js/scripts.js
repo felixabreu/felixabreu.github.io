@@ -289,7 +289,7 @@ $(document).ready(function() {
 		};	
 
         $('.instafeed').each(function() {
-            var feedID = $(this).attr('data-user-name');
+            var feedID = $(this).attr('@so_fit2.0');
             $(this).children('ul').spectragram('getUserFeed', {
                 query: feedID,
                 max: 12
