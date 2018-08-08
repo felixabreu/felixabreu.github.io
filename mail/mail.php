@@ -25,9 +25,9 @@ $recipientName              = 'Steven Ogidi';             // REQUIRED value.
 
 // Email details            - Change these to suit your website needs
 $emailSubject               = 'SoFit - Steven Ogidi'; // REQUIRED value. Subject of the email that the recipient will see
-$websiteName                = 'SoFit 2.0';                // REQUIRED value. This is used when a name or email is not collected from the website form
+$websiteName                = 'SoFit';                // REQUIRED value. This is used when a name or email is not collected from the website form
 
-$timeZone					= 'Australia/Melbourne';         // OPTIONAL, but some servers require this to be set. 
+$timeZone					= 'America/New_York';         // OPTIONAL, but some servers require this to be set. 
                                                              // See a list of all supported timezones at: http://php.net/manual/en/timezones.php
  /*----------------------------------------------------------------------------*\
 |*  You do not need to edit anything below this line, the rest is automatic.    *|
