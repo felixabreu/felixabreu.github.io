@@ -1694,7 +1694,6 @@ textarea {
 input[type="text"],
 button,
 textarea,
-select,
 input[type="password"] {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1805,7 +1804,6 @@ input.transparent:-ms-input-placeholder,
 button.transparent:-ms-input-placeholder {
   color: #fff;
 }
-input[type="submit"],
 button[type="submit"] {
   height: 50px;
   line-height: 48px;
