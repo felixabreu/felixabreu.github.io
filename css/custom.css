@@ -6,3 +6,6 @@
     border: 2px solid #13181d;
     line-height: initial;
 }
+.image-xs {
+    max-height: 45px;
+}
