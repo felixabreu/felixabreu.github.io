@@ -284,7 +284,7 @@ $(document).ready(function() {
     
     if($('.instafeed').length){
     	jQuery.fn.spectragram.accessData = {
-			accessToken: '6362284000.bc37d81.b1b3d8e343aa4c2e8b8b278d35541fa6',
+			accessToken: '6362284000.bc37d81.6ef86fd9c0d5424581ffb3686f4ce195',
 			clientID: 'bc37d8186fb74d7d9815ed79c0cb7e33'
 		};	
 
