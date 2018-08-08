@@ -292,7 +292,9 @@ $(document).ready(function() {
             var feedID = $(this).attr('data-user-name');
             $(this).children('ul').spectragram('getUserFeed', {
                 query: feedID,
-                max: 12
+                max: 20,
+                size: "small",
+                wrapEachWith: '<li class="img-responsive"></li>'
             });
         });
     }   
