@@ -13,6 +13,30 @@ $(document).ready(function() {
 
     // Smooth scroll to inner links
         var innerLinks = $('a.inner-link');
+        var train = $("#training option:selected").val();
+        $("#training").on("change", function() {
+            train = $("#training").val();
+            if(train!==null){
+                if(train === "10, One-on-One Training Sessions"){
+                    $("#trainingPrice").html("$300");
+                } else if(train === "20, One-on-One Training Sessions"){
+                    $("#trainingPrice").html("$600");
+                } else if(train === "30, One-on-One Training Sessions"){
+                    $("#trainingPrice").html("$850");
+                }
+            }
+        } );
+
+
+        if(train!==null){
+            if(train === "10, One-on-One Training Sessions"){
+                $("#trainingPrice").html("$300");
+            } else if(train === "20, One-on-One Training Sessions"){
+                $("#trainingPrice").html("$600");
+            } else if(train === "30, One-on-One Training Sessions"){
+                $("#trainingPrice").html("$850");
+            }
+        }
 
         if(innerLinks.length){
             innerLinks.each(function(){
@@ -131,6 +155,8 @@ $(document).ready(function() {
             $(this).css('margin-left', -(difference));
         }
     });
+
+
 
     // Mobile Menu
 
