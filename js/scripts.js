@@ -18,25 +18,25 @@ $(document).ready(function() {
             train = $("#training").val();
             if(train!==null){
                 if(train === "1, One-on-One Training Session"){
-                    $("#trainingPrice").html("$35");
+                    $("#trainingPrice").html("$45");
                 } else if(train === "2, One-on-One Training Sessions"){
-                    $("#trainingPrice").html("$70");
+                    $("#trainingPrice").html("$80");
                 } else if(train === "3, One-on-One Training Sessions"){
-                    $("#trainingPrice").html("$105");
+                    $("#trainingPrice").html("$115");
                 } else if(train === "4, One-on-One Training Sessions"){
-                    $("#trainingPrice").html("$140");
+                    $("#trainingPrice").html("$150");
                 } else if(train === "5, One-on-One Training Sessions"){
-                    $("#trainingPrice").html("$175");
+                    $("#trainingPrice").html("$185");
                 } else if(train === "6, One-on-One Training Sessions"){
-                    $("#trainingPrice").html("$210");
+                    $("#trainingPrice").html("$220");
                 } else if(train === "7, One-on-One Training Sessions"){
-                    $("#trainingPrice").html("$245");
+                    $("#trainingPrice").html("$255");
                 } else if(train === "8, One-on-One Training Sessions"){
-                    $("#trainingPrice").html("$280");
+                    $("#trainingPrice").html("$290");
                 } else if(train === "9, One-on-One Training Sessions"){
-                    $("#trainingPrice").html("$315");
+                    $("#trainingPrice").html("$325");
                 } else if(train === "10, One-on-One Training Sessions(*SPECIAL*)"){
-                    $("#trainingPrice").html("$300");
+                    $("#trainingPrice").html("$310");
                 }
             }
         } );
@@ -44,25 +44,25 @@ $(document).ready(function() {
 
         if(train!==null){
             if(train === "1, One-on-One Training Session"){
-                $("#trainingPrice").html("$35");
+                $("#trainingPrice").html("$45");
             } else if(train === "2, One-on-One Training Sessions"){
-                $("#trainingPrice").html("$70");
+                $("#trainingPrice").html("$80");
             } else if(train === "3, One-on-One Training Sessions"){
-                $("#trainingPrice").html("$105");
+                $("#trainingPrice").html("$115");
             } else if(train === "4, One-on-One Training Sessions"){
-                $("#trainingPrice").html("$140");
+                $("#trainingPrice").html("$150");
             } else if(train === "5, One-on-One Training Sessions"){
-                $("#trainingPrice").html("$175");
+                $("#trainingPrice").html("$185");
             } else if(train === "6, One-on-One Training Sessions"){
-                $("#trainingPrice").html("$210");
+                $("#trainingPrice").html("$220");
             } else if(train === "7, One-on-One Training Sessions"){
-                $("#trainingPrice").html("$245");
+                $("#trainingPrice").html("$255");
             } else if(train === "8, One-on-One Training Sessions"){
-                $("#trainingPrice").html("$280");
+                $("#trainingPrice").html("$290");
             } else if(train === "9, One-on-One Training Sessions"){
-                $("#trainingPrice").html("$315");
+                $("#trainingPrice").html("$325");
             } else if(train === "10, One-on-One Training Sessions(*SPECIAL*)"){
-                $("#trainingPrice").html("$300");
+                $("#trainingPrice").html("$310");
             }
         }
 
