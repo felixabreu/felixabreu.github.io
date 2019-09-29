@@ -11,60 +11,28 @@ var mr_firstSectionHeight,
 $(document).ready(function() { 
     "use strict";
 
+
+
     // Smooth scroll to inner links
         var innerLinks = $('a.inner-link');
         var train = $("#training option:selected").val();
         $("#training").on("change", function() {
             train = $("#training").val();
             if(train!==null){
-                if(train === "1, One-on-One Training Session"){
-                    $("#trainingPrice").html("$45");
-                } else if(train === "2, One-on-One Training Sessions"){
-                    $("#trainingPrice").html("$90");
-                } else if(train === "3, One-on-One Training Sessions"){
-                    $("#trainingPrice").html("$135");
-                } else if(train === "4, One-on-One Training Sessions"){
+                if(train === "1 Session -"){
+                    $("#trainingPrice").html("$65");
+                } else if(train === "3 Sessions -"){
                     $("#trainingPrice").html("$180");
-                } else if(train === "5, One-on-One Training Sessions"){
-                    $("#trainingPrice").html("$225");
-                } else if(train === "6, One-on-One Training Sessions"){
-                    $("#trainingPrice").html("$270");
-                } else if(train === "7, One-on-One Training Sessions"){
-                    $("#trainingPrice").html("$315");
-                } else if(train === "8, One-on-One Training Sessions"){
-                    $("#trainingPrice").html("$360");
-                } else if(train === "9, One-on-One Training Sessions"){
-                    $("#trainingPrice").html("$405");
-                } else if(train === "10, One-on-One Training Sessions(*SPECIAL*)"){
-                    $("#trainingPrice").html("$430");
+                } else if(train === "5 Sessions -"){
+                    $("#trainingPrice").html("$300");
+                } else if(train === "10 Sessions -"){
+                    $("#trainingPrice").html("$550");
+                } else if(train === "20 Sessions -"){
+                    $("#trainingPrice").html("$1150");
                 }
             }
         } );
 
-
-        if(train!==null){
-            if(train === "1, One-on-One Training Session"){
-                $("#trainingPrice").html("$45");
-            } else if(train === "2, One-on-One Training Sessions"){
-                $("#trainingPrice").html("$90");
-            } else if(train === "3, One-on-One Training Sessions"){
-                $("#trainingPrice").html("$135");
-            } else if(train === "4, One-on-One Training Sessions"){
-                $("#trainingPrice").html("$180");
-            } else if(train === "5, One-on-One Training Sessions"){
-                $("#trainingPrice").html("$225");
-            } else if(train === "6, One-on-One Training Sessions"){
-                $("#trainingPrice").html("$270");
-            } else if(train === "7, One-on-One Training Sessions"){
-                $("#trainingPrice").html("$315");
-            } else if(train === "8, One-on-One Training Sessions"){
-                $("#trainingPrice").html("$360");
-            } else if(train === "9, One-on-One Training Sessions"){
-                $("#trainingPrice").html("$405");
-            } else if(train === "10, One-on-One Training Sessions(*SPECIAL*)"){
-                $("#trainingPrice").html("$430");
-            }
-        }
 
         if(innerLinks.length){
             innerLinks.each(function(){
@@ -334,26 +302,27 @@ $(document).ready(function() {
            twitterFetcher.fetch(TweetConfig);
       });
 
-	
-	
-	    if($('.instafeed').length){
-
-        $.fn.spectragram.accessData = {
-            accessToken: '6362284000.bc37d81.2841858b33aa4e7e93432373dea19c18',
-            clientID: 'bc37d8186fb74d7d9815ed79c0cb7e33'
-          };
+    // Instagram Feed
+    
+    if($('.instafeed').length){
+    	jQuery.fn.spectragram.accessData = {
+			accessToken: '6362284000.34114bd.a9798c2b099e4a8e96030c70f9979c89',
+			clientID: '34114bd0751d47f5aefdceccc96edfb1'
+		};	
 
         $('.instafeed').each(function() {
             var feedID = $(this).attr('data-user-name');
             $(this).children('ul').spectragram('getUserFeed', {
                 query: feedID,
-                max: 12
+                max: 16,
+                // size: "small",
+                // wrapEachWith: '<li class="img-responsive"></li>'
             });
         });
-    }
-	
-    // Instagram Feed
-    
+    }   
+
+   
+
     // Flickr Feeds
 
     if($('.flickr-feed').length){
