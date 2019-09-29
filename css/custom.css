@@ -9,3 +9,7 @@
 .image-xs {
     max-height: 45px;
 }
+.bg-white{
+ background-color: white;
+ color: black;
+}
