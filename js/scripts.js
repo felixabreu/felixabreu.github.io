@@ -12,9 +12,25 @@ $(document).ready(function() {
     "use strict";
 
 
+    function getQueryVariable(variable)
+    {
+           var query = window.location.search.substring(1);
+           var vars = query.split("&");
+           for (var i=0;i<vars.length;i++) {
+                   var pair = vars[i];
+                   if(pair[0] == variable){return pair[1];}
+           }
+           return(false);
+    }
+    if(getQueryVariable("paid=true")){
+        // console.log("paid is true")
+    } else {
+        // console.log("paid is false");
+    }
 
     // Smooth scroll to inner links
         var innerLinks = $('a.inner-link');
+
         var train = $("#training option:selected").val();
         $("#training").on("change", function() {
             train = $("#training").val();
@@ -32,6 +48,18 @@ $(document).ready(function() {
                 }
             }
         } );
+
+        var workout = $("#workouts option:selected").val();
+        $("#workouts").on("change", function() {
+            workout= $("#workouts").val();
+            if(workout!==null){
+                if(workout === "2 Week Ab Workout"){
+                    $("#workoutPrice").html("$25");
+                } else {
+                    $("#workoutPrice").html("$60");
+                }
+            }
+        })
 
 
         if(innerLinks.length){
